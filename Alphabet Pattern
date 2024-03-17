@@ -1,0 +1,27 @@
+Problem statement
+Print the following pattern for the given N number of rows.
+
+Pattern for N = 3
+AAA
+BBB
+CCC
+
+
+import java.util.*;
+public class Solution 
+{
+	public static void main(String[] args) 
+	{
+	 // write your code logic here !!
+	 Scanner scanner = new Scanner(System.in);
+     int N = scanner.nextInt();
+     for (int i = 0; i < N; i++) {
+     char currentChar = (char) ('A' + i);
+     for (int j = 0; j < N; j++) {
+     System.out.print(currentChar);
+    }
+    System.out.println();
+    }
+
+    }
+}
